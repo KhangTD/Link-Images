@@ -10,7 +10,12 @@ body {
     margin: 0;
     padding: 0;
 }
-
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
 /*==Container==*/
 #container {
     width: 80%;
@@ -20,15 +25,21 @@ body {
 /*==Header==*/
 #header {
     background: #fff;
+    margin: 0;
     padding: 0;
     text-align: center;
+    overflow: hidden;
 }
 #header #logo img {
     width: 65%;
     height: auto;
 }
 #header #slogan {
-    color: aqua;
+    color:#8AD385;
+    display: inline-block;
+    float: right;
+    width: 500px;
+    height: auto;
 }
 
 /*==Menu==*/
@@ -71,7 +82,7 @@ body {
 }
 #content ul li {
     display: inline-block;
-    margin-right: 5px;
+    margin: 10px;
 }
 #content img {
     width: 210px;
@@ -90,3 +101,46 @@ body {
     margin: 5px 10px;
 }
 
+/*==Footer==*/
+#footer {
+    background: #141412;
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+#footer p {
+    text-align: center;
+}
+
+/*==Content-Item==*/
+#content-item {
+    background-color: #f1f1f1;
+    width: 100%;
+    margin: 5px auto;
+    overflow: auto;
+}
+#content-item ul {
+    list-style-type: none;
+    overflow: auto;
+}
+#content-item #row1 {
+    float: left;
+    width: 33.33%;
+}
+#row1 ul {
+    text-align: center;
+}
+#row2 ul {
+    margin-right: 20px;
+    text-align: justify;
+}
+#row1 img {
+    border: 2px solid #444;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+strong {
+    font-size: 20px;
+    color: red;
+}
