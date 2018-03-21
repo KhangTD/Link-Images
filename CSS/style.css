@@ -3,12 +3,12 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
     font-family: Helvetica,Arial, sans-serif;
     font-size: 16px;
-    margin: 0;
-    padding: 0;
 }
 a {
     text-decoration: none;
@@ -73,32 +73,33 @@ a:hover {
 /*==Content==*/
 #content {
     background-color: #f1f1f1;
-    overflow: hidden;
     width: 100%;
     margin-top: 5px;
 }
+#content .row {
+    padding: 5px;
+}
 #content ul {
+    text-align: center;
     text-decoration: none;
 }
 #content ul li {
     display: inline-block;
-    margin: 10px;
+    width: 20%;
+    margin: 15px;
 }
 #content img {
-    width: 210px;
-    height: 210px;
+    width: 100%;
+    height: auto;
     border: 2px solid #333;
     border-radius: 5px;
-    margin: 5px 2px;
 }
 #content p {
     color: #333;
-    width: 95%;
+    width: 100%;
     border-bottom: 5px solid #FBC62F;
     font-size: 20px;
-    line-height: 40px;
     font-weight: bold;
-    margin: 5px 10px;
 }
 
 /*==Footer==*/
@@ -128,14 +129,14 @@ a:hover {
     float: left;
     width: 33.33%;
 }
-#row1 ul {
+#content-item #row1 ul {
     text-align: center;
 }
-#row2 ul {
+#content-item #row2 ul {
     margin-right: 20px;
     text-align: justify;
 }
-#row1 img {
+#content-item #row1 img {
     border: 2px solid #444;
     border-radius: 10px;
     margin-bottom: 5px;
